@@ -1,14 +1,18 @@
+/* CO1: CSS Syntax and Basic Styling */
+
 body{
-font-family: Arial;
-background:#ecf0f1;
-margin:0;
+font-family: Arial; /* CO1: Typography */
+background:#ecf0f1; /* CO1: Color representation */
+margin:0; /* CO1: Spacing */
 }
+
+/* CO2: CSS Layout Styling */
 
 .site-header{
 background:#2c3e50;
 color:white;
 text-align:center;
-padding:20px;
+padding:20px; /* CO1: Padding */
 }
 
 .site-nav{
@@ -17,20 +21,24 @@ text-align:center;
 padding:10px;
 }
 
+/* CO1: CSS Selectors */
+
 .nav-link{
 color:white;
 text-decoration:none;
-margin:10px;
+margin:10px; /* CO1: Margin spacing */
 }
 
 .site-main{
 padding:30px;
 }
 
+/* CO2: Box Layout Styling */
+
 .content-box{
 background:white;
 padding:20px;
-border-radius:8px;
+border-radius:8px; /* CO1: Border styling */
 max-width:500px;
 margin:auto;
 }
@@ -44,6 +52,8 @@ margin:5px;
 .actions{
 margin-top:10px;
 }
+
+/* CO2: Styling for interactivity */
 
 .btn{
 padding:8px 12px;
@@ -61,6 +71,8 @@ color:white;
 background:#bdc3c7;
 }
 
+/* CO4: Dynamic list UI styling */
+
 #attendanceList{
 list-style:none;
 padding:0;
@@ -71,7 +83,7 @@ margin-top:10px;
 background:#f8f9fa;
 padding:10px;
 margin:5px 0;
-display:flex;
+display:flex; /* CO2: Flexbox Layout */
 justify-content:space-between;
 }
 
@@ -85,6 +97,8 @@ display:none;
 .search-result.show{
 display:block;
 }
+
+/* CO2: Styling for interaction feedback */
 
 .found{
 background:#d4edda;
