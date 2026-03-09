@@ -1,54 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- CO1: HTML Document Structure -->
+<html lang="en"> <!-- CO1: HTML Structure -->
+
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"> <!-- CO5: Meta tags for SEO / page optimization -->
 <title>Digital Student Attendance Recording Application</title>
-<link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet" href="styles.css"> <!-- CO1: Introductory CSS Styling -->
+
 </head>
 
 <body>
 
+<!-- CO2: Semantic HTML Tag -->
 <header class="site-header">
-<h1>Digital Student Attendance Recording Application</h1>
+<h1>Digital Student Attendance Recording Application</h1> <!-- CO1: Headings -->
 </header>
 
+<!-- CO2: Semantic Navigation -->
 <nav class="site-nav">
 <a href="#" class="nav-link active" data-tab="home">Home</a>
 </nav>
 
+<!-- CO2: Semantic Main Content -->
 <main class="site-main">
 
 <section id="panel-home" class="panel active">
 
 <div class="welcome-section">
-<h2>Student Attendance</h2>
-<p>Add and manage student attendance records</p>
+<h2>Student Attendance</h2> <!-- CO1: Heading -->
+<p>Add and manage student attendance records</p> <!-- CO1: Paragraph -->
 </div>
 
 <div class="content-box">
 
+<!-- CO2: Forms & Input Handling -->
 <div class="input-section">
+
 <input type="text" id="studentName" placeholder="Student Name">
+<!-- CO2: Form Input Element -->
 
 <select id="attendanceStatus">
 <option value="Present">Present</option>
 <option value="Absent">Absent</option>
 </select>
+<!-- CO2: Form Selection Input -->
+
 </div>
 
+<!-- CO4: Event Handling Buttons -->
 <div class="actions">
+
 <button class="btn btn-primary" id="addBtn">Add</button>
+
 <button class="btn btn-secondary" id="searchBtn">Search</button>
+
 <button class="btn btn-secondary" id="sortBtn">Sort</button>
+
 <button class="btn btn-secondary" id="clearBtn">Clear</button>
+
 </div>
 
 <div class="list-section">
+
 <h3>Attendance List</h3>
 
 <p id="emptyMsg" class="empty-msg">No records added</p>
 
 <ul id="attendanceList"></ul>
+<!-- CO4: DOM Manipulation (Dynamic list creation) -->
 
 <div id="searchResult" class="search-result"></div>
 
@@ -60,10 +79,12 @@
 
 </main>
 
+<!-- CO2: Semantic Footer -->
 <footer class="site-footer">
 <p>DSA Project - Student Attendance System</p>
 </footer>
 
+<!-- CO3 & CO4: JavaScript Programming and DOM -->
 <script src="script-dsa.js"></script>
 
 </body>
